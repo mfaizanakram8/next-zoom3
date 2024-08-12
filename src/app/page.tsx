@@ -1,26 +1,29 @@
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   return (
-    <div><figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
-    <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="pic.jfif" alt="" width="384" height="512"/>
-    <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
-      <blockquote>
-        <p className="text-lg font-medium">
-          “I am Front End Developer. I have recently engaged in BS Computer Science. I have learned a lot about coding and programming during my time at university. I have worked on some projects and I think I did a good job.”
-        </p>
-      </blockquote>
-      <figcaption className="font-medium">
-        <div className="text-sky-500 dark:text-sky-400">
-          muhammad faizan akram
+    <div 
+      style={{ backgroundColor: '#59bcfd' }} 
+      className="border-2 border-blue-500 rounded-lg p-4"
+    >
+      <figure className="md:flex bg-white-150 rounded-xl p-8 md:p-0 dark:bg-white-400">
+        <img className="w-24 h-24 md:w-48 md:h-auto rounded-full mx-auto border-4 border-white-400" src="/img.jpg" alt="" width="384" height="512"/>
+        <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
+          <blockquote>
+            <p className="text-lg font-medium">
+              <i> "Hi, I’m from Rahim Yar Khan and have just begun my journey in the BSCS program at KFUEIT. I’m excited to explore the world of computer science and eager to learn and grow in this field." </i>
+            </p>
+          </blockquote>
+          <figcaption className="font-medium">
+            <div className="text-yellow-500 dark:text-yellow-400"><b>muhammad faizan akram</b></div>
+            <div className="text-red-700 dark:text-red-500">
+              BSCS, KFUEIT
+            </div>
+          </figcaption>
         </div>
-        <div className="text-slate-700 dark:text-slate-500">
-          Staff Engineer, mantech
-        </div>
-      </figcaption>
+      </figure>
     </div>
-  </figure></div>
   )
 }
 
-export default page
+export default Page
